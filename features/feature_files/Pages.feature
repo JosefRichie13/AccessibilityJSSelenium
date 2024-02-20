@@ -34,6 +34,7 @@ Feature: I check the accessibility for various pages in the webpage
     When I wait for "5" seconds
     Then I do an accessibility check for the "Cart" Page  
 
+
   Scenario: Checkout Page
     Given I open the web page
     And I login as a standard user
@@ -42,6 +43,7 @@ Feature: I check the accessibility for various pages in the webpage
     And I checkout of the cart
     When I wait for "5" seconds
     Then I do an accessibility check for the "Checkout" Page      
+
 
   Scenario: Shipping Page
     Given I open the web page
@@ -55,6 +57,7 @@ Feature: I check the accessibility for various pages in the webpage
     When I wait for "5" seconds
     Then I do an accessibility check for the "Checkout" Page    
 
+
   Scenario: Shopping Finished Page
     Given I open the web page
     And I login as a standard user
@@ -67,6 +70,7 @@ Feature: I check the accessibility for various pages in the webpage
     And I confirm my order  
     When I wait for "5" seconds
     Then I do an accessibility check for the "Finish" Page     
+
 
   Scenario: A Page with many Violations
     Given I open the web page with many violations
