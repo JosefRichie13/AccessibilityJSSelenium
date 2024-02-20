@@ -20,3 +20,7 @@ When('I login as a standard user', async function(){
     await this.driver.findElement(By.id(selectors.Password)).sendKeys(configs.Password)
     await this.driver.findElement(By.id(selectors.LoginButton)).click()
 })
+
+When('I open a product page', async function(){
+    await this.driver.findElement(By.className(selectors.ProductList)).click()
+})
