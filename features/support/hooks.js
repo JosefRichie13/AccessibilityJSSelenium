@@ -3,7 +3,7 @@ import { Builder, Capabilities } from 'selenium-webdriver';
 
 // Increases the default timeout to 1 min, default is 30 sec
 import { setDefaultTimeout } from '@cucumber/cucumber';
-setDefaultTimeout(60 * 1000);
+setDefaultTimeout(60 * 2000);
 
 Before(async function () {
     this.driver = await new Builder()

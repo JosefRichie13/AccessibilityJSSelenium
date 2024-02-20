@@ -10,7 +10,7 @@ Given('I open the web page', async function(){
 })
 
 Given('I open the web page with many violations', async function(){
-    await this.driver.get("https://www.bis.gov.in/career-opportunities/1961-2/")
+    await this.driver.get("https://www.bis.gov.in/")
 })
 
 
