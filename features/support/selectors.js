@@ -18,6 +18,7 @@ class selectors {
     static ContinueButton = "continue"
     static FinishButton = "finish"
     static CheckoutBanner = "complete-header"
+    static ProductSort = "product_sort_container"
 
 }
 

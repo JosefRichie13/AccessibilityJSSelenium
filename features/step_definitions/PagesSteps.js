@@ -24,3 +24,16 @@ When('I login as a standard user', async function(){
 When('I open a product page', async function(){
     await this.driver.findElement(By.className(selectors.ProductList)).click()
 })
+
+When('I click on the {string} menu', async function(MenuType){
+    switch(MenuType){
+        case "site":
+            await this.driver.findElement(By.id(selectors.Menu)).click()
+            break
+        case "sort":
+            await this.driver.findElement(By.className(selectors.ProductSort)).click()
+            break
+        default :
+            console.log("Incorrect Usertype")         
+    }
+})
