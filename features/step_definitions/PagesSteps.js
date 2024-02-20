@@ -15,7 +15,6 @@ When('I wait for {string} seconds', async function(Time){
 })
 
 
-
 When('I login as a standard user', async function(){
     await this.driver.findElement(By.id(selectors.UserName)).sendKeys(configs.ValidUser)
     await this.driver.findElement(By.id(selectors.Password)).sendKeys(configs.Password)
