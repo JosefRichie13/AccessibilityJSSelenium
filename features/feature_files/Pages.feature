@@ -67,3 +67,8 @@ Feature: I check the accessibility for various pages in the webpage
     And I confirm my order  
     When I wait for "5" seconds
     Then I do an accessibility check for the "Finish" Page     
+
+  Scenario: A Page with many Violations
+    Given I open the web page with many violations
+    When I wait for "5" seconds
+    Then I do an accessibility check for the "PageWithViolations" Page  

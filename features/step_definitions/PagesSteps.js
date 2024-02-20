@@ -9,6 +9,10 @@ Given('I open the web page', async function(){
     await this.driver.get(configs.MainURL)
 })
 
+Given('I open the web page with many violations', async function(){
+    await this.driver.get("https://www.bis.gov.in/career-opportunities/1961-2/")
+})
+
 
 When('I wait for {string} seconds', async function(Time){
     await new Promise(resolve => setTimeout(resolve, Time * 1000))
