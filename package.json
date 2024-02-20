@@ -1,0 +1,19 @@
+{
+  "name": "accessibilityjsselenium",
+  "version": "1.0.0",
+  "description": "Accessibility Testing using Axe Core",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joseph",
+  "license": "ISC",
+  "devDependencies": {
+    "@axe-core/webdriverjs": "^4.8.5",
+    "@cucumber/cucumber": "^10.3.1",
+    "chai": "^5.1.0",
+    "selenium-webdriver": "^4.17.0",
+    "webdriver-manager": "^12.1.9"
+  }
+}
