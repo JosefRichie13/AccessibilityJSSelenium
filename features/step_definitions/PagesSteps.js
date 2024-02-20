@@ -37,3 +37,31 @@ When('I click on the {string} menu', async function(MenuType){
             console.log("Incorrect Usertype")         
     }
 })
+
+When('I add a product to the cart', async function(){
+    await this.driver.findElement(By.css(selectors.AddToCart)).click()
+})
+
+When('I go to the cart', async function(){
+    await this.driver.findElement(By.className(selectors.Cart)).click()
+})
+
+When('I checkout of the cart', async function(){
+    await this.driver.findElement(By.id(selectors.Checkout)).click()
+})
+
+When('I enter my information to continue', async function(table){
+
+    const UserDetails = table.hashes()
+
+    await this.driver.findElement(By.id(selectors.FirstName)).sendKeys(UserDetails[0]['FirstName'])
+    await this.driver.findElement(By.id(selectors.LastName)).sendKeys(UserDetails[0]['LastName'])
+    await this.driver.findElement(By.id(selectors.ZipCode)).sendKeys(UserDetails[0]['Zip'])
+
+    await this.driver.findElement(By.id(selectors.ContinueButton)).click()
+
+})
+
+When('I confirm my order', async function(){
+    await this.driver.findElement(By.id(selectors.FinishButton)).click()
+})
